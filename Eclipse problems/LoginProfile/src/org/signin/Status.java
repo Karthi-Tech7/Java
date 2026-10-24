@@ -6,7 +6,8 @@ public class Status {
 	private String name;
 	private String userName;
 	private String email;
-	private String Password;
+	private Integer password;
+	Map<String,Integer>m;
 	
 	public String getName() {
 		return name;
@@ -17,10 +18,10 @@ public class Status {
 		if(name.equals("karthi")){
 			this.name = "valid name";
 		}
-		if(name.equals("dhanush")){
+		else if(name.equals("dhanush")){
 			this.name = "valid name";
 		}
-		if(name.equals("nagulan")){
+		else if(name.equals("nagulan")){
 			this.name = "valid name";
 		}
 		
@@ -33,7 +34,21 @@ public class Status {
 
 
 	public void setUserName(String userName) {
-		this.userName = userName;
+		if(userName.equals("karthi_2"))
+		{
+			this.userName="valid userName karthi_2";
+		}
+		else if(userName.equals("dhan_12"))
+		{
+			this.userName="valid userName dhan_12";
+		}
+		else if(userName.equals("nagul_7"))
+		{
+			this.userName="valid userName nagul_7";
+		}
+		else {
+			this.userName = "Invalid userName";
+		}
 	}
 
 
@@ -43,24 +58,55 @@ public class Status {
 
 
 	public void setEmail(String email) {
-		this.email = email;
+		if(email.equals("karthi@gmail"))
+		{
+			this.email = "valid email";
+		}
+		else if(email.equals("dhanush@gmail"))
+		{
+			this.email = "valid email";
+		}
+		else if(email.equals("nagulan@gmail"))
+		{
+			this.email = "valid email";
+		}
+		else {
+			this.email = "Invalid email";
+		}
 	}
 
 
-	public String getPassword() {
-		return Password;
+	public Integer getPassword() {
+		return password;
 	}
 
 
-	public void setPassword(String password) {
-		Password = password;
+	public void setPassword(Integer password) {
+		if(userName.equals("valid userName karthi_2"))
+		{
+			Integer pass = m.get("karthi");
+			this.password = pass;
+		}
+		else if(userName.equals("valid userName dhan_12"))
+		{
+			Integer pass = m.get("dhanush");
+			this.password = pass; 
+		}
+		else if(userName.equals("valid userName nagul_7"))
+		{
+			Integer pass = m.get("nagulan");
+			this.password = pass; 
+		}
+		else {
+			this.password = 0;
+		}
 	}
 
 
-	public static void main(String[] args) throws IOException {
-		Map<String,Integer> m = new LinkedHashMap<>();
+	public void dataBase () throws IOException {
+		 m = new LinkedHashMap<>();
 		File f = new File("C:\\Users\\acer\\Documents\\Eng\\data.txt");
-		List<String> rd = FileUtils.readLines(f);
+		List<String> rd = FileUtils.readLines(f,"UTF-8");
 		for(int i=0;i<rd.size();i++)
 		{
 			String pv = rd.get(i);
@@ -70,6 +116,10 @@ public class Status {
 			int convert = Integer.parseInt(pas);
 			m.put(name, convert);
 		}
-		System.out.println(m);
+//		System.out.println(m);
+		public int compareTO(Status o)
+		{
+			
+		}
 	}
 }

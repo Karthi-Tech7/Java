@@ -1,3 +1,3 @@
 karthi,karthi_2,karthi@gmail,1111
-dhanush,dhan_12,karthi@gmail,2222
-nagulan,nagul_7,karthi@gamil,3333
+dhanush,dhan_12,dhanush@gmail,2222
+nagulan,nagul_7,nagulan@gamil,3333
