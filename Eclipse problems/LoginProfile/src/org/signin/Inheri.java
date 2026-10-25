@@ -32,12 +32,12 @@ public class Inheri {
 //		Integer password = s.getPassword();
 //		System.out.println(password);
 //		collection to inherit
-		Set <Status>li = new LinkedHashSet<>();
+		List <Status>li = new LinkedList<>();
 		li.add(s);
 		li.add(t);
 		li.add(u);
 		
-		Collection.sort(li);
+		Collections.sort(li);
 		
 		for(Status st:li)
 		{

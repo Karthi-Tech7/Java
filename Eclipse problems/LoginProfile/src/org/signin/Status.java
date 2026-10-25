@@ -2,7 +2,7 @@ package org.signin;
 import java.io.*;
 import java.util.*;
 import org.apache.commons.io.FileUtils;
-public class Status {
+public class Status implements Comparable<Status>{
 	private String name;
 	private String userName;
 	private String email;
@@ -117,9 +117,16 @@ public class Status {
 			m.put(name, convert);
 		}
 //		System.out.println(m);
-		public int compareTO(Status o)
-		{
-			
-		}
 	}
+	@Override
+    public int compareTo(Status o) {
+        // Ascending Order (Chinnathula irunthu perusu):
+        if (this.password > o.password) {
+            return -1;
+        } else if (this.password < o.password) {
+            return 1;
+        } else {
+            return 0;
+        }
+    }
 }
