@@ -1,0 +1,99 @@
+<html>
+    <head>
+        <title>
+            Online Form
+        </title>
+    </head>
+    <body>
+        <h1>Form</h1>
+    <h1>Login page</h1>
+    <form method="get" enctype="multipart/form-data">
+        <p> 
+            <label>Username:</label><input type="text" name="username" value="name" placeholder="Enter your username">
+        </p>
+        <p>
+            <label>Password:</label><input type="password" name="Password" placeholder="Enter your Password">
+        </p>
+        <p>
+            <label>Comments:</label>
+            <textarea type=""text name="comments" placeholder="Enter your comment" cols="20" rows="4"></textarea>
+        </p>
+        <p>
+            <label>Radio Button:</label>
+            <input type="radio" name="ROP" value="First" id="First"><label for="First">First</label>
+            <input type="radio" name="ROP" value="Second" checked id="Second"><label for="Second">second</label>
+            <input type="radio" name="ROP" value="Third" id="Third"><label for="Third">Third</label>
+        </p>
+        <p>
+            <label>CheckBox:</label>
+            <input type="checkbox" name="CB[]" value="One">One
+            <input type="checkbox" name="CB[]" value="Two">Two
+            <input type="checkbox" name="CB[]" value="Three">Three
+        </p>
+        <p>
+            <label>CheckBox:</label>
+            <input type="checkbox" name="CB[]" value="One" id="CB1"><label for="CB1">One</label>
+            <input type="checkbox" name="CB[]" value="Two" id="CB2"><label for="CB2">Two</label>
+            <input type="checkbox" name="CB[]" value="Three" id="CB3"><label for="CB3">Three</label>
+        </p>
+        <p>
+            <label>DropDown dob:</label>
+            <select name="dob" multiple size="7">
+                <option value="">Select your dob</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3" selected>3 </option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+            </select>
+        </p>
+        <p>
+            <label>Rank List:</label>
+            <select name="top_rank" multiple size="5">
+                <option value="">Select Top Rank</option>
+                <option value="1">Daimond</option>
+                <option value="2">Gold</option>
+                <option value="3">Silver</option>
+            </select>
+        </p>
+        <p><label>data file:</label> <input type="file" name="data_file"></p>
+        <input type="submit" name="submit">
+
+    </form><hr>
+    <form method="get">
+        <fieldset>
+            <label>fieldset</label>
+            <legend>Login details</legend>
+        <label>Username:</label>
+        <input type="text" name="username"placeholder="Enter your username"><br><br>
+        <lable>
+            Password:
+        </lable>
+        <input type="password" name="password" placeholder="Enter your password">
+        </fieldset>
+         <fieldset>
+            <legend>
+                Contact:
+            </legend>
+        <label>Mobile:</label>
+        <input type="text" name="username"><br><br>
+        <lable>
+            Address:
+        </lable>
+        <input type="text" name="Address">
+        </fieldset>
+        <fieldset>
+            <legend>
+                Vote:
+            </legend>
+        <label>Dob:</label>
+        <input type="text" name="Dob"><br><br>
+        <lable>
+            Age:
+        </lable>
+        <input type="text" name="Age">
+        </fieldset>
+    </form>
+    </body>
+</html>
