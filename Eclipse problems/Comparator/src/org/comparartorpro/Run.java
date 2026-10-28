@@ -8,12 +8,12 @@ public class Run {
 		f.setBenchNo(7);
 		
 		Forms f1 = new Forms();
-		f1.setName("bhava");
+		f1.setName("ram");
 		f1.setRole(12);
 		f1.setBenchNo(10);
 		
 		Forms f2 = new Forms();
-		f2.setName("girini");
+		f2.setName("krish");
 		f2.setRole(16);
 		f2.setBenchNo(6);
 		
