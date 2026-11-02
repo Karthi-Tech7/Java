@@ -1,0 +1,65 @@
+#p{
+    color: red;
+    text-align: center;
+    /* font-family: */
+}
+#bc{
+     background-color: rgb(8, 4, 14);
+}
+   
+#tg{
+    color: rgb(158, 167, 160);
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+#tf{
+    color: green;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+#c{
+    color: purple;
+    text-align: center;
+    font-family:cursive;
+}
+#fan{
+    color: orange;
+    text-align: center;
+    font-family:fantasy;
+
+}
+#sa{
+    color:blueviolet;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#fs{
+    color: brown;
+    text-align: center;
+    font-size: 20px;
+}
+#dv{
+    color: darkgreen;
+    text-align: center;
+    font-size: 150%;
+}
+#em{
+    color: darkslategray;
+    text-align: center;
+    font-size: 1.2em;
+}
+#rem{
+    color: darkorange;
+    text-align: center;
+    font-size: 1.2rem;
+}
+#fw{
+    font-weight: bold;
+    color: darkred;
+}
+#fw1{
+    font-style: oblique;
+    color: darkblue;
+    font-weight: 100;
+}
