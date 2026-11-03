@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #before::before {
+            content: "😭";
+           
+        }
+        #after::after {
+            content: "❌";
+            
+        }
+        #first::first-letter {
+            font-size: 2em;
+            color: green;
+        }
+        #last::first-line {
+            font-weight: bold;
+            font-family:cursive;
+        }
+        #selection::selection {
+            background-color: yellow;
+        }
+        input::placeholder {
+            color: red;
+            font-style: italic;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Pseudo-classes</h1>
+    <p id ="before">This is a paragraph with a before pseudo-class.</p>
+    <p id="after">This is a paragraph with an after pseudo-class.</p>
+    <p id="first">This is the firstletter paragraph.</p>
+    <p id="last">This is the firstline paragraph.</p>
+    <p id="selection">This is the SELECTION paragraph.</p>
+    <input type="text" placeholder="Enter your name">
+</body>
+</html>
