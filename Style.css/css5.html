@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            /* background-image: url('kali-ferrofluid.jpg');
+            background-color: lightblue;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 200px 300px;
+            background-size: contain;
+            background-size: auto;
+            background-size: cover; */
+            background: red url('kali-ferrofluid.jpg') no-repeat center center / cover fixed;
+        }
+        p{
+            font-weight: 400;
+            font-size: x-large;
+            letter-spacing: 7px;
+            word-spacing: 20px;
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="color: red;">Backgrpund properties:</h1>
+    <p>Background properties in CSS are used to control the background appearance of an HTML element. We commonly use the body tag to apply background properties to the entire webpage. Using background properties, we can add background colors and images, adjust image positions, control image sizes, and decide how images behave while scrolling. CSS provides different background properties such as background-image, background-color, background-repeat, background-position, background-attachment, and background-size. The background-image property is used to add an image as the background of an element instead of using a color. We use the `url()` function to specify the image location. The background-color property is used to set the background color of an element. CSS supports three common color formats: predefined color names, HEX values, and RGB values. A hexadecimal color is represented using the `#RRGGBB` format, where RR represents red, GG represents green, and BB represents blue. Each component accepts values between `00` and `FF`. For example, `#0000ff` represents blue because the blue component has its highest value. RGB stands for Red, Green, and Blue, and it uses the `rgb()` function to define colors. Each RGB component accepts an integer value between 0 and 255 or a percentage between 0% and 100%. For example, `rgb(0, 0, 255)` represents blue. CSS also provides 140 predefined color names, such as red, blue, coral, and brown, which can be used directly. The background-repeat property controls whether a background image should repeat inside an element. Its default value is `repeat`, which repeats the image horizontally and vertically. We can use `no-repeat` to prevent repetition, `repeat-x` to repeat the image horizontally, and `repeat-y` to repeat it vertically. The background-position property is used to adjust the position of a background image. Its default position is `left top`, and we can use nine common keyword combinations to position the image, such as `center center`, `right top`, and `left bottom`. The background-attachment property determines whether the background image moves along with the page content or remains fixed while scrolling. It has two commonly used values: `scroll` and `fixed`. The default value is `scroll`, which allows the background image to move along with the content, whereas `fixed` keeps the background image in the same position while scrolling. The background-size property is used to control the size of a background image. Its `auto` value maintains the original image size, `cover` scales the image to cover the entire element but may crop some parts, and `contain` scales the image to fit inside the element without cropping. We can also specify exact dimensions using pixels or percentages, such as `200px 100px` or `50% 50%`. Finally, the background shorthand property allows us to combine multiple background properties into a single declaration. We can specify the background color, image, repeat, position, and attachment in one line, which makes CSS code shorter and easier to maintain.</p>
+
+</body>
+</html>

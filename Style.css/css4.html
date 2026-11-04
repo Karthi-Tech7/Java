@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .f{
+            font-size: medium;
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+            color: blueviolet;
+        }
+        .s{
+            font-size: medium;
+            text-align: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: brown;
+        }
+        p{
+            text-align: center;
+            font-size: x-large;
+        }
+        #l:link{
+            color: blue;
+        }
+        #v:visited{
+            color: cadetblue;
+        }
+        #h:hover{
+            background-color: darkgoldenrod;
+        }
+        #a:active{
+            color: darkkhaki;
+            font-style: italic;
+        }
+        #fo:focus{
+            color: darkgreen;
+            text-transform: uppercase;
+        }
+        p:first-child{
+            color: darkred;
+        }
+        p:last-child{
+            color: darkviolet;
+        }
+        p:nth-child(2){
+             color: lightcoral;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="color: rgb(65, 134, 134); font-weight: 300;">Class Selector:using group the elements</h1>
+    <p class="f">Firstone</p>
+    <p class="f">Firsttwo</p>
+    <p class="s">SecondOne</p>
+    <p class="s">SecondTwo</p><hr>
+
+    <h1>Pesudo classes:</h1>
+    <p ><a id="l" href="#">Link</a></p>
+    <p ><a id="v" href="#">Visited</a></p>
+    <p ><a id="h" href="#">hover</a></p>
+    <p ><a id="a" href="#">active</a></p>
+    <p ><a id="fo" href="#">focus</a></p><hr>
+    <div>
+        <p>Fisrt child:first-class key</p>
+        <p>last child:nth-class key</p>
+        <p>third child:last-class key  to reperesent the same p tag to get frist,last,nth()</p>
+    </div>
+</body>
+</html>
