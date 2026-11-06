@@ -18,7 +18,7 @@ public class First {
 		System.out.println("The dot:"+"aab".matches("a.b"));
 		System.out.println("The dot:"+"a1b".matches("a.b")+"\n");
 		
-		//start
+		//star
 		System.out.println("The star:"+"a".matches("ab*"));
 		System.out.println("The star:"+"ab".matches("ab*"));
 		System.out.println("The star:"+"abb".matches("ab*")+"\n");
