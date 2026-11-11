@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            color: red;
+        }
+        hr{
+            color: black;
+            border: 2px solid black;
+        }
+        h2+p{
+            font-family: cursive;
+            font-size: 2em;
+        }
+        h2~p{
+            color: darkred;
+            font-style: italic;
+        }
+        div>p{
+            background-color: blueviolet;
+        }
+        div p{
+            font-size: 30px;
+        }
+        /* Attribute Selectors */
+        [name]{
+            color: darkblue;
+        }
+        [name="attr"]{
+            font-style: italic;
+        }
+        [value~="full"]{
+            text-align: center;
+        }
+        [title|="flower"]
+        {
+            font-family: cursive;
+        }
+        [title^="f"]{
+            text-decoration: underline;
+        }
+        [title$="r"]
+        {
+            text-transform: uppercase;
+        }
+        [title*="w"]{
+            text-shadow: 5px 5px 5px blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>selectors</h1>
+    <h1>1.   *  :We should not use id and class selectors without the use of its purpose.It is called divitis and classitis.To avoid this we use different selectors.
+We already used element selector also known as type selector.The asterisk (*) is known as the CSS universal selectors. It can be used to select any and all types of elements in an HTML page.
+This selector is useful when we want to select all the elements on the page. 
+</h1>
+    <hr>
+    <h2>combinators or Combinant Selectors in CSS:</h2>
+    <p>adjacent sibling selector (+):</p>
+    <p>general sibling selector (~):</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum dignissimos laboriosam unde nulla commodi odit a exercitationem id ea ad natus, sapiente recusandae assumenda expedita, ducimus repellat incidunt repellendus molestiae.</p>
+    <hr>
+    <div>
+        <p>child selector (>):</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores nihil assumenda officiis repellendus, et facilis? Animi vel ab libero repudiandae commodi voluptatem perferendis ipsa, natus esse suscipit totam rerum provident?</p>
+        <section>
+            <p>descendant selector (space):</p>
+        </section>
+    </div>
+    <hr>
+    <h3 name="sele">First</h3>
+    <h3 name="attr">second</h3>
+    <h3 value="full stack">third</h3>
+    <h3 value="fullstack">fourth</h3>
+    <h3 value="full">fifth</h3>
+    <h3 title="flowers">sixth</h3>
+    <h3 title="flower">seventh</h3>
+    <h3 title="flower-s">eigth</h3>
+</body>
+</html>
