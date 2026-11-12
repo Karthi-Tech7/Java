@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            border: 2px solid red;
+            padding: 10px;
+            display: flex;
+            /* flex-direction: row;  */
+            /* flex-direction: row-reverse; */
+            /* flex-direction: column; */
+            /* width: 200px; */
+            height: 500px;
+            /* flex-wrap: wrap; */
+            /* flex-wrap: wrap-reverse; */
+            /* justify-content: flex-start; */
+            /* justify-content: flex-end; */
+            /* justify-content: center; */
+            /* justify-content: space-around; */
+            /* justify-content: space-between; */
+            /* justify-content: space-evenly; */
+            /* align-content: stretch; */
+            /* align-content: flex-start; */
+            /* align-content: flex-end; */
+            /* align-content: center; */
+            /* align-content: space-around; */
+            /* align-content: space-between; */
+            /* align-content: space-evenly; */
+
+        }
+        .box{
+            border: 2px solid blueviolet;
+            padding: 2px;
+            margin: 20px;
+            background-color: lightpink;
+            font-weight: bold;
+        }
+        /* order */
+        /* .box1{
+            order: 4;
+        }
+        .box2{
+            order: 5;
+        }
+        .box3{
+            order: 2;
+        }
+        .box4{
+            order: 3;
+        }
+        .box5{
+            order: 1;
+        } */
+         /* flex-grow */
+         /* .box{
+            margin: 1px;
+            flex-grow: 1;
+         }
+         .box2{
+            flex-grow: 2;
+         } */
+        /* flex-shrink */
+        /* .box{
+            margin: 1px;
+            width: 500px;
+            flex-shrink: 1;
+        }
+        .box2{
+            flex-shrink: 4;
+        }
+        .box5{
+            flex-shrink: 3;
+        } */
+         /* align-self */
+         .box{
+            align-self: stretch;
+         }
+         .box3{
+            align-self: flex-start;
+         }
+         .box4{
+            align-self: flex-end;
+         }
+         .box5{
+            align-self: center;
+         }
+
+    </style>
+</head>
+<body>
+    <h1>Flex Box</h1>
+    <div class="container">
+        <div class="box box1">Box 1</div>
+        <div class="box box2">Box 2</div>
+        <div class="box box3">Box 3</div>
+        <div class="box box4">Box 4</div>
+        <div class="box box5">Box 5</div>
+    </div>
+</body>
+</html>
