@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .Grid{
+            border: 2px solid blue;
+            display: grid;
+            height: 800px;
+
+            /* gridtemplatecolumns */
+            /* grid-template-columns: 100px 200px 300px;
+            grid-template-columns: 200px 200px 200px 200px;
+            grid-template-columns: repeat(3,300px); */
+            /* grid-template-columns: 1fr 2fr 3fr ; */
+            /* grid-template-columns: repeat(3,1fr); */
+            /* grid-template-columns: repeat(5,minmax(200px,5fr)); */
+
+            /* gridtemplatrows/
+            /* grid-template-rows: 100px 200px 300px; */
+            /* grid-template-rows: repeat(3,1fr); */
+            grid-template: repeat(3,200px)/repeat(3,200px);
+
+            /* gaps */
+            /* column-gap: 20px; */
+            /* row-gap: 30px; */
+            /* gap: 10px 10px ; */
+
+            /* justifyitems-horizontal*/
+            /* justify-items: flex-start; */
+            /* justify-items: flex-end; */
+            /* justify-items: center; */
+            /* justify-items: stretch; */
+
+            /* aligniteam-vertical */
+            /* align-items: stretch; */
+            /* align-items: flex-start; */
+            /* align-items: flex-end; */
+            /* align-items: center; */
+            /* place-items: start center; */
+
+            /* justifycontent */
+            /* justify-content: flex-start; */
+            /* justify-content: flex-end; */
+            /* justify-content: center; */
+            /* justify-content: space-around; */
+            /* justify-content: space-between; */
+            /* justify-content: space-evenly; */
+
+            /* aligncontent */
+            /* align-content: flex-start; */
+            /* align-content: flex-end; */
+            /* align-content: center; */
+            /* align-content: space-around; */
+            /* align-content: space-between; */
+            /* align-content: space-evenly; */
+            /* place-content: space-between center; */
+
+        }
+        .box{
+            padding: 10px;
+            color: white;
+            font-weight: bold;
+        }
+        .box1{
+            background-color: aqua;
+            order: 7;
+        }
+         .box2{
+            background-color: darkcyan;
+            order: 1;
+        }
+         .box3{
+            background-color: violet;
+            order: 5;
+        }
+         .box4{
+            background-color: pink;
+            order: 2;
+        }
+         .box5{
+            background-color: darkslategray;
+            order: 9;
+        }
+         .box6{
+            background-color: darkolivegreen;
+            order: 8;
+        }
+         .box7{
+            background-color: darkred;
+            order: 6;
+        }
+         .box8{
+            background-color: darkgreen;
+            order: 5;
+        }
+         .box9{
+            background-color: darkgoldenrod;
+            order: 3;
+        }
+        /* .box1{
+            /* gridcolumn */
+            /* grid-column-start: 1;
+            grid-column-end: 3;
+            grid-column: 1/ span 2; */
+
+            /* gridrows */
+            /* grid-row-start: 1;
+            grid-row-end: 3;
+            grid-row: 1/ span 3; */
+        /* } */
+        .box3{
+            /* justifyself */
+            /* justify-self: stretch; */
+            /* justify-self: flex-start; */
+            /* justify-self: flex-end; */
+            /* justify-self: center; */
+
+            /* alignself */
+            /* align-self: stretch; */
+            /* align-self: flex-start; */
+            /* align-self: flex-end; */
+            /* place-self: start end; */
+
+        }
+        .box5{
+            /* justify-self: center; */
+        }
+
+    </style>
+</head>
+<body>
+    <h1>grid box</h1>
+    <div class="Grid">
+        <div class="box box1">Box 1</div>
+        <div class="box box2">Box 2</div>
+        <div class="box box3">Box 3</div>
+        <div class="box box4">Box 4</div>
+        <div class="box box5">Box 5</div>
+        <div class="box box6">Box 6</div>
+        <div class="box box7">Box 7</div>
+        <div class="box box8">Box 8</div>
+        <div class="box box9">Box 9</div>
+        
+
+    </div>
+    
+    
+</body>
+</html>
